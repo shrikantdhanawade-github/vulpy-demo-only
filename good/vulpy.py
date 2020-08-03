@@ -50,5 +50,5 @@ def add_csp_headers(response):
         response.headers['Content-Security-Policy'] = csp
     return response
 
-app.run(debug=True, host='0.0.0.0', port=7000, extra_files='csp.txt')
+app.run(host='0.0.0.0', port=7000, extra_files='csp.txt')
 
